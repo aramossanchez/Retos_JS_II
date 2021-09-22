@@ -33,7 +33,6 @@ while (numero > 0) {
 
 binario.reverse(binario);
 
-
 //Output
 
 console.log(binario);
