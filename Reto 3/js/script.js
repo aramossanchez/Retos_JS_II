@@ -16,10 +16,10 @@ Version: 1.0
 //Input
 
 var numero = prompt("Introduce un número para saber si es primo");
-numero = parseInt(numero);
 var primo = true;
 
 //Proceso
+numero = parseInt(numero);
 
 for (let i = 2; i < numero; i++) {
     if (numero%i == 0) {

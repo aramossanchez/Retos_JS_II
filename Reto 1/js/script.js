@@ -19,31 +19,34 @@ Version: 1.0
 
 //Input
 
-var figura = prompt("Introduce que figura quieres calcular:\ncirculo\ntriangulo\ncuadrado");
+let figura = prompt("Introduce que figura quieres calcular:\ncirculo\ntriangulo\ncuadrado");
 
 const PI = 3.1416;
 
-if (figura == "circulo") {
-    var radio = prompt("Introduce el radio del círculo");
-    radio = parseFloat(radio);
-}
+switch (figura) {
+    case "circulo":
+        var radio = prompt("Introduce el radio del círculo");
+        radio = parseFloat(radio);
+        break;
+    case "triangulo":
+        var base = prompt("Introduce la base del triángulo");
+        base = parseFloat(base);
+        var altura = prompt("Introduce la altura del triángulo");
+        altura = parseFloat(altura);
+        break;
+    case "cuadrado":
+        var lado = prompt("Introduce el lado del cuadrado");
+        lado = parseFloat(lado);
+        break;
 
-if (figura == "triangulo") {
-    var base = prompt("Introduce la base del triángulo");
-    base = parseFloat(base);
-    var altura = prompt("Introduce la altura del triángulo");
-    altura = parseFloat(altura);
-}
-
-if (figura == "cuadrado") {
-    var lado = prompt("Introduce el lado del cuadrado");
-    lado = parseFloat(lado);
+    default:
+        break;
 }
 
 //Proceso
 
 function Circulo(radio) {
-    return (radio ** 2) * PI;    
+    return (radio ** 2) * PI;
 }
 
 function Triangulo(base, altura) {

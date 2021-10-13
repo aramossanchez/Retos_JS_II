@@ -15,16 +15,16 @@ Version: 1.0
 
 //Input
 
-var cantidad = prompt("Introduce la cantidad de numeros que quieres que se generen");
-var limiteInferior = prompt("Introduce desde que numero mínimo empezará a generar numeros aleatorios");
-var limiteSuperior = prompt("Introduce hasta que numero máximo empezará a generar numeros aleatorios");
+var cantidad = parseInt(prompt("Introduce la cantidad de numeros que quieres que se generen"));
+var limiteInferior = parseInt(prompt("Introduce desde que numero mínimo empezará a generar numeros aleatorios"));
+var limiteSuperior = parseInt(prompt("Introduce hasta que numero máximo empezará a generar numeros aleatorios"));
 var numeros = [];
 
 //Proceso
 
 function numeroAleatorio(cantidad, limiteInferior, limiteSuperior) {
     for (let i = 1; i <= cantidad; i++) {
-        numeros.push(Math.random() * (limiteSuperior - limiteInferior) + limiteInferior);
+        numeros.push(parseInt(Math.random() * (limiteSuperior - limiteInferior) + limiteInferior));
     }
 }
 
