@@ -18,9 +18,9 @@ Version: 1.0
 
 //Input
 
-var euros = prompt("Introduce los euros a convertir");
+let euros = prompt("Introduce los euros a convertir");
 euros = parseFloat(euros);
-var moneda = prompt("Tipo de moneda:\nlibras\ndolares\nyenes");
+let moneda = prompt("Tipo de moneda:\nlibras\ndolares\nyenes");
 const Libras = 0.86;
 const Dolares = 1.28611;
 const Yenes = 129.852;

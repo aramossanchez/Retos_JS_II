@@ -14,17 +14,13 @@ Version: 1.0
 
 //Input
 
-var numero = prompt("Introduce el número que quieres el factorial.");
-var factorial = [];
-var resultadoFinal = 1;
+let numero = parseInt(prompt("Introduce el número del que quieres el factorial."));
+let resultadoFinal = 1;
 
 //Proceso
 
 for (let i = 1; i <= numero; i++) {
-    factorial.push(i);
-}
-for (let i = 0; i < factorial.length; i++) {
-    resultadoFinal = resultadoFinal * factorial[i];
+    resultadoFinal *= i;
 }
 
 //Output

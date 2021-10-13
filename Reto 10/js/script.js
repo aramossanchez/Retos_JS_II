@@ -50,3 +50,4 @@ const añadirArray = () =>{
 añadirArray();
 
 console.log(array);
+console.log(Math.max(...array));

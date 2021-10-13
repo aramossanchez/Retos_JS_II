@@ -16,11 +16,12 @@ Version: 1.0
 
 //Input
 
-var numero = prompt("Indica que número quiere convertir a binario");
-numero = parseInt(numero);
-var binario = [];
+let numero = prompt("Indica que número quiere convertir a binario");
+let binario = [];
 
 //Proceso
+
+numero = parseInt(numero);
 
 if (numero == 0) {
     binario.push(0);
@@ -35,4 +36,4 @@ binario.reverse(binario);
 
 //Output
 
-console.log(binario);
+console.log(binario.toString());

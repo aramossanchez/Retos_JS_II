@@ -15,8 +15,8 @@ Version: 1.0
 
 //Input
 
-var numero = prompt("Introduce un número para saber si es primo");
-var primo = true;
+let numero = prompt("Introduce un número para saber si es primo");
+let primo = true;
 
 //Proceso
 numero = parseInt(numero);

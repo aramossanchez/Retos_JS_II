@@ -21,16 +21,21 @@ tamaño = parseInt(tamaño);
 var suma = 0;
 
 //Proceso
-
-for (let i = 1; i <= tamaño; i++) {
-    array.push(Math.random() * (10 - 0));
+const rellenarArray = () =>{
+    for (let i = 1; i <= tamaño; i++) {
+        array.push(parseInt(Math.random() * (10 - 0)));
+    }
 }
 
-array.forEach(numero => {
-    suma = suma + numero;
-});
+const mostrarDatos = () =>{
+    for (let i = 0; i < array.length; i++) {
+        console.log("La posición " + i + " del array es " + array[i]);
+        suma = suma + array[i];
+        
+    }
+    console.log(`La suma de todos los valores es ${suma}`);
+}
 
 //Output
-
-console.log(array);
-console.log(suma);
+rellenarArray();
+mostrarDatos();

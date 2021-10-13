@@ -13,7 +13,7 @@ Version: 1.0
 
 //Input
 
-var array = [];
+let array = [];
 
 for (let i = 1; i <= 10; i++) {
     array.push(prompt("Introduce el número " + i + " del array."));

@@ -15,10 +15,10 @@ Version: 1.0
 
 //Input
 
-var cantidad = parseInt(prompt("Introduce la cantidad de numeros que quieres que se generen"));
-var limiteInferior = parseInt(prompt("Introduce desde que numero mínimo empezará a generar numeros aleatorios"));
-var limiteSuperior = parseInt(prompt("Introduce hasta que numero máximo empezará a generar numeros aleatorios"));
-var numeros = [];
+let cantidad = parseInt(prompt("Introduce la cantidad de numeros que quieres que se generen"));
+let limiteInferior = parseInt(prompt("Introduce desde que numero mínimo empezará a generar numeros aleatorios"));
+let limiteSuperior = parseInt(prompt("Introduce hasta que numero máximo empezará a generar numeros aleatorios"));
+let numeros = [];
 
 //Proceso
 
