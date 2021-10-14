@@ -22,7 +22,7 @@ let numeros = [];
 
 //Proceso
 
-function numeroAleatorio(cantidad, limiteInferior, limiteSuperior) {
+const numeroAleatorio = (cantidad, limiteInferior, limiteSuperior) => {
     for (let i = 1; i <= cantidad; i++) {
         numeros.push(parseInt(Math.random() * (limiteSuperior - limiteInferior) + limiteInferior));
     }
