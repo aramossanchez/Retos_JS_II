@@ -22,6 +22,7 @@ let primo = true;
 numero = parseInt(numero);
 
 const comprobarPrimo = (numero) =>{
+    primo = true;
     for (let i = 2; i < numero; i++) {
         if (numero%i == 0) {
             primo = false;
