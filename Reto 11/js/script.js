@@ -16,13 +16,13 @@ Version: 1.0
 
 //Input
 
-var num;
+let num;
 
-var tamaño = prompt("Introduce el tamaño que quieres que tengan ambos arrays");
+let tamaño = prompt("Introduce el tamaño que quieres que tengan ambos arrays");
 
-var array1 = [];
-var array2 = [];
-var arrayCajon = [];
+let array1 = [];
+let array2 = [];
+let arrayCajon = [];
 
 
 //Proceso

@@ -47,14 +47,14 @@ const rellenarArray = (array) =>{
 }
 
 const saberUltimoDigito = (numero) =>{
-    digito = numero % 10;
+    let digito = numero % 10;
     return digito;
 }
 
 const crearArrayUltimoDigito = () =>{
     array.map(function(numero) {
         if (saberUltimoDigito(numero) == ultimoDigito) {
-            arrayConUltimoDigito.push(numero)
+            arrayConUltimoDigito.push(numero);
         }
     })
 }
