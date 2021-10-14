@@ -21,13 +21,16 @@ let primo = true;
 //Proceso
 numero = parseInt(numero);
 
-for (let i = 2; i < numero; i++) {
-    if (numero%i == 0) {
-        primo = false;
+const comprobarPrimo = (numero) =>{
+    for (let i = 2; i < numero; i++) {
+        if (numero%i == 0) {
+            primo = false;
+        }
     }
+    console.log(primo);
 }
 
-//Output
 
-console.log(primo);
+//Output
+ comprobarPrimo(numero);
 
