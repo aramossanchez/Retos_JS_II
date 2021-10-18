@@ -18,22 +18,32 @@ Version: 1.0
 
 let numero = prompt("Indica que número quiere convertir a binario");
 let binario = [];
-
-//Proceso
+let binarioHecho = "";
 
 numero = parseInt(numero);
 
-if (numero == 0) {
-    binario.push(0);
+//Proceso
+const pasarBinario = (num) =>{
+
+    if (num == 0) {
+        binario.push(0);
+    }
+    
+    while (num > 0) {
+        binario.push(num % 2);
+        num = parseInt(num / 2);
+    }
+    
+    binario = binario.reverse(binario);
+    for (let i = 0; i < binario.length; i++) {
+        binarioHecho = binarioHecho + binario[i];
+    }
+
 }
 
-while (numero > 0) {
-    binario.push(numero % 2);
-    numero = parseInt(numero / 2);
-}
-
-binario.reverse(binario);
 
 //Output
 
-console.log(binario.toString());
+pasarBinario(numero);
+
+console.log(binarioHecho);
