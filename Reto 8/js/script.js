@@ -15,15 +15,20 @@ Version: 1.0
 
 let array = [];
 
-for (let i = 1; i <= 10; i++) {
-    array.push(prompt("Introduce el número " + i + " del array."));
-}
-
 //Proceso
+const rellenarArray = () =>{
+    for (let i = 1; i <= 10; i++) {
+        array.push(prompt("Introduce el número " + i + " del array."));
+    }
+};
 
 //Output
+const mostrarArray = () =>{
+    for (let i = 0; i < array.length; i++) {
+        console.log(array[i] + " es el valor de la posición " + i + " del array.");
+    }
+};
 
-for (let i = 0; i < array.length; i++) {
-    console.log(array[i] + " es el valor de la posición " + i + " del array.");
-}
+rellenarArray();
+mostrarArray();
 

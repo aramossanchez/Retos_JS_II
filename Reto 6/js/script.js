@@ -14,9 +14,14 @@ Version: 1.0
 //Input
 
 var numero = prompt("Introduce el número que quieras saber cuantas cifras tiene");
-var cifras = Array.from(numero);
 
 //Proceso
+
+if (numero >= 0 && !numero.includes(".")) {
+    var cifras = Array.from(numero);
+}else{
+    alert("No has introducido un numero correcto.");
+}
 
 //Output
 

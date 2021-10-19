@@ -18,7 +18,7 @@ var tamaño = prompt("Introduce el tamaño del array");
 tamaño = parseInt(tamaño);
 var primo = true;
 var array = [];
-var num;
+var num = 0;
 
 //Proceso
 
@@ -43,11 +43,11 @@ const añadirArray = () =>{
             array.push(num);
         } 
     } 
+    console.log(array);
+    console.log(Math.max(...array));
 }
 
 //Output
 
 añadirArray();
 
-console.log(array);
-console.log(Math.max(...array));

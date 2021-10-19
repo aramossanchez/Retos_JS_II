@@ -23,7 +23,7 @@ var suma = 0;
 //Proceso
 const rellenarArray = () =>{
     for (let i = 1; i <= tamaño; i++) {
-        array.push(parseInt(Math.random() * (10 - 0)));
+        array.push(parseInt(Math.random() * (10)));
     }
 }
 
